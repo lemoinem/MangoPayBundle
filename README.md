@@ -1,4 +1,4 @@
-Getting Started With WeMakCustom MangoPayBundle
+Getting Started With WeMakeCustom MangoPayBundle
 ==============
 
 A bundle to wrappe and simplify the use of Mango Pay 2 Api.
