@@ -1,0 +1,10 @@
+parameters:
+#    wmc_mango_pay.example.class: WMC\MangoPayBundle\Example
+
+services:
+#    wmc_mango_pay.example:
+#        class: %wmc_mango_pay.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
+
+    wmc_mango_pay.api:
+        class: WMC\MangoPayBundle\Service\MangoPayApiService

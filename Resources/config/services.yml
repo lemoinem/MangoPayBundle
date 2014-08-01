@@ -1,0 +1,6 @@
+parameters:
+    wmc_mango_pay.api.class: WMC\MangoPayBundle\Service\MangoPayApiService
+
+services:
+    wmc_mango_pay.api:
+        class: %wmc_mango_pay.api.class%

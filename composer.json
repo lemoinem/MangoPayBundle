@@ -1,0 +1,48 @@
+{
+    "name": "wemakecustom/mango-pay-bundle",
+    "type": "symfony-bundle",
+    "description": "Symfony 2 MangoPayBundle, a wrapper for MangoPay 2 Api",
+    "keywords": ["mangopay"],
+    "homepage": "http://www.wemakecustom.com",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Léo Benoist",
+            "email": "leo@wemakecustom.com",
+            "homepage": "https://http://www.wemakecustom.com"
+        }
+    ],
+    "require": {
+        "php" : ">=5.4.0",
+        "symfony/framework-bundle" : ">=2.3",
+        "mangopay/mangopay2-php-sdk": "*"
+    },
+
+    "autoload": {
+        "psr-0": { "WMC\\MangoPayBundle": "" }
+    },
+
+    "target-dir": "WMC/MangoPayBundle",
+
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "mangopay/mangopay2-php-sdk",
+                "version": "master",
+                "source": {
+                    "url": "git://github.com/MangoPay/mangopay2-php-sdk.git",
+                    "type": "git",
+                    "reference": "master"
+                },
+                "dist": {
+                    "url": "https://github.com/MangoPay/mangopay2-php-sdk/archive/master.zip",
+                    "type": "zip"
+                },
+                "autoload": {
+                    "files": ["MangoPaySDK/mangoPayApi.inc"]
+                }
+            }
+        }
+    ]
+}
