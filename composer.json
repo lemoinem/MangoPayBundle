@@ -13,13 +13,15 @@
         }
     ],
     "require": {
-        "php" : ">=5.4.0",
-        "symfony/framework-bundle" : ">=2.3",
+        "php": ">=5.4.0",
+        "symfony/framework-bundle": ">=2.3",
         "mangopay/mangopay2-php-sdk": "*"
     },
 
     "autoload": {
-        "psr-0": { "WMC\\MangoPayBundle": "" }
+        "psr-4": {
+            "WMC\\MangoPayBundle": ""
+        }
     },
 
     "target-dir": "WMC/MangoPayBundle",

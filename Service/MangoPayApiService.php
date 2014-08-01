@@ -4,6 +4,7 @@ namespace WMC\MangoPayBundle\Service;
 
 use MangoPay\MangoPayApi;
 
-class MangoPayApiService extends MangoPayApi {
+class MangoPayApiService extends MangoPayApi
+{
 
 }
